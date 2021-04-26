@@ -1,0 +1,35 @@
+html {
+	background-color: #000;
+}
+
+html[mode="light"] {
+	background-color: #eee;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+* {
+	color: #fff;
+	font-family: 'Titillium Web', sans-serif;
+}
+
+html[mode="light"] * {
+	color: #000;
+}
+
+h1 {
+	text-align: center;
+	font-weight: 200;
+	font-size: 5em;
+	margin: .25em;
+}
+
+#stonks {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
