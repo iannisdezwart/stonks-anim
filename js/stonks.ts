@@ -120,11 +120,11 @@ class StonkAnim {
 	}
 
 	draw() {
-		for (let i = 0; i < stonks.length; i++) {
+		for (let i = 0; i < this.stonks.length; i++) {
 			const time = Math.min(1, Math.max(0,
 				this.easingFunction(this.time - StonkAnim.alternateDelay * i)))
 
-			const stonk = stonks[i]
+			const stonk = this.stonks[i]
 
 			if (1 - time < 0.0001) {
 				this.finishedStonks[i] = true
